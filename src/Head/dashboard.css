@@ -1,0 +1,56 @@
+div.dashboard-container {
+    font-size: large;
+    text-align: left;
+    min-width: 400px;
+    min-height: 600px;
+}
+
+#v-pills-tab {
+    border-right: 1px solid rgb(180, 180, 180);
+    height: 100vh;
+    min-height: 600px;
+    margin-top: 7px;
+    position: relative;
+    z-index: 10;
+}
+
+/* .dashboard-container  .nav {
+    font-size: large;
+    text-align: left;
+    min-width: 200px;
+    min-height: 300px;
+    border-right: 1px solid rgb(180, 180, 180);
+    padding-left: 2px;
+    width: 30vw;
+    height: 100vh;
+    min-height: 80rem;
+    max-width: 30rem;
+    min-width: 15rem;
+}
+
+.dashboard-container .nav-link {
+    margin-top: 5%;
+}
+
+.dashboard-container #v-pills-view-details-tab {
+    margin-top: 10%;
+}
+
+.dashboard-container  #v-pills-edit-details-tab {
+    margin-top: 6%;
+    margin-bottom: 4%;
+}
+
+.details-container {
+    display: block;
+    position: relative;
+    text-align: left;
+}
+
+#input-label {
+    margin-left: 0;
+}
+
+#view-head-details {
+    text-align: center;
+} */

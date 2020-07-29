@@ -2,6 +2,7 @@ import React from 'react';
 import {Navbar,Nav,NavDropdown,Form,FormControl,Button} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import Logo from "./logo.svg"
+import Dashboard from "../Dashboard"
 
 
 
@@ -28,6 +29,7 @@ const Baselayout = ({match}) => {
     </Nav>
   </Navbar.Collapse>
 </Navbar>
+            <Dashboard />
            </div>
        )
 }

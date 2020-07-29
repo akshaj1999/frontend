@@ -24,56 +24,74 @@ function Register() {
 
     return (
         <div className="register-wrapper">
-            <div className="register-header">
-                <h1>Sign Up</h1>
+            <div className="text-center" id="register-heading">
+                <h1 className="display-4 heading-main">Sign Up</h1>
                 <hr />
             </div>
-            <form className="register-form" onSubmit={handleSubmit}>
-                <label for="name" className="lead">
+            <form 
+            className="register-form" 
+            onSubmit={handleSubmit}
+            >
+                <label 
+                htmlFor="reg-name-input" 
+                className="lead"
+                >
                     Full Name 
                 </label>
                 <input 
                 type="text" 
-                id="name" 
-                className="input-field" 
+                id="reg-name-input" 
+                className="form-control" 
                 name="Name" 
                 required pattern="name" 
-                autocomplete="name" 
-                placeholder=" Full Name" 
-                autofocus
+                autoComplete="name" 
+                placeholder="Full Name" 
+                autoFocus
                 value={name}
-                onChange={handleChange("name")} />
+                onChange={handleChange("name")} 
+                />
 
-                <label for="email" className="lead">
+                <label 
+                htmlFor="reg-email-input"
+                className="lead">
                     Email-id 
                 </label>
                 <input 
                 type="email" 
                 id="email" 
                 name="email"  
-                className="input-field" 
-                required autocomplete="email" 
-                pattern="email-id" 
-                placeholder=" email-id" 
+                className="form-control" 
+                required pattern="email-id" 
+                autoComplete="email" 
+                placeholder="Email-id" 
                 value={email}
-                onChange={handleChange("email")} />
+                onChange={handleChange("email")} 
+                />
 
-                <label for="password" className="lead">
+                <label 
+                htmlFor="reg-password" 
+                className="lead"
+                >
                     Password
                 </label>
                 <input 
                 type="password"
-                 id="password" 
-                 className="input-field" 
-                 placeholder=" password" 
+                id="reg-password" 
+                className="form-control" 
+                placeholder="Password" 
                 value={password}
-                onChange={handleChange("password")} />
+                onChange={handleChange("password")} 
+                />
 
-                <button type="submit" className="reg-btn">
+                <button 
+                type="submit" 
+                className="btn btn-primary"
+                id="reg-btn"
+                >
                     Sign Up
                 </button>
             </form>
         </div>
     );
 }
-export default Register
+export default Register;

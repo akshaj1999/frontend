@@ -4,12 +4,12 @@ import {
   Route, // for later
   Link,
 } from 'react-router-dom'
-import Login from './Login/Login'
+import Login from '../User/Login/login'
 import {Navbar,Nav,NavDropdown,Form,FormControl,Button} from 'react-bootstrap';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import Baselayout from './Baselayout/baselayout';
-import Home from './Home/home';
-import Register from './Register/register'
+import Baselayout from '../User/Baselayout/baselayout';
+import Home from '../User/Home/home';
+import Register from '../User/Register/register'
 function User({ match }) {
     return (
       <div>

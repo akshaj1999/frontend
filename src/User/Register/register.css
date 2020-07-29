@@ -1,107 +1,59 @@
-/* COLORS
-Main :  rgba(3, 245, 164, 0.7), rgba(22, 180, 207, 0.7))
-*/
-/* 
-body {
-    font-weight: 600;
-    line-height: 2;
-    color: rgba(119, 119, 119, 0.24);
-    box-sizing: border-box;
-    text-align: center;
-  }
-   */
-
 .register-wrapper {
-    text-align: center;
-    left: 33%;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    color: rgba(22, 180, 207, 0.7);
-    padding: 1.5rem;
+    width: 45vw;
+    max-width: 450px;
+    min-width: 300px;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    transform: translateY(1rem);
     border: 1px solid rgba(119, 119, 119, 0.24);
     border-radius: 10px;
     box-shadow: 0px 5px 5px 4px rgba(119, 119, 119, 0.3);
     animation-name: moveInTop;
-    animation-duration: 1.5s;
+    animation-duration: 1.7s;
 }
 
 @keyframes moveInTop {
     from {
-        transform: translateY(-50rem);
+        transform: translateY(-30rem);
     }
 
     to {
-        transform: translateY(0);
+        transform: translateY(1rem);
     }
 }
 
-.register-header {
-    font-size: large;
-    letter-spacing: 0.5rem;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    position: relative;
-    display: block;
-}
 
-.register-form {
-    position: relative;
-    margin-top:15%;
-    margin-left: 32%;  
-    font-size: medium;
-    display: block;
-    max-width: 25rem;
-    transform: translate(-30%,-40%);
-}
-
-.lead {
-    position: relative;
-    margin-left: 10%;
-    text-align: start;
-    display: block;
-    font-weight: 400;
-    width: 100%;
-}
-
-.input-field {
-    height: 3rem;
-    font-size: medium;
-    margin-bottom: 0.5rem;
-    width: 100%;
-    border-radius: 5px;
-    border: 0.5px solid rgba(119, 119, 119, 0.24);
-    outline: none;
-}
-  
-.input-field:focus {
-    border: 1px solid black;
-}
-
-.reg-btn {
-    text-align: center;
-    height: 4rem;
-    display: block;
-    margin-top: 1rem;
-    margin-right: auto;
+form.register-form {
+    padding: 1rem;
+    width: 90%;
     margin-left: auto;
-    font-size: medium;
-    letter-spacing: 0.2rem;
-    color: #ffffff;
-    background-color: rgba(22, 180, 207, 0.7);
-    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, .2);
-    border: none;
-    outline: none;
+    margin-right: auto;
+    transform: translateY(-80px);
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+#reg-btn {
+    margin: 5px auto 10px auto;
+    width: 100%;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 3px;
     border-radius: 7px;
 }
 
-.reg-btn:hover {
-    cursor: pointer;
+#reg-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, .2);
-  }
+}
   
-  .reg-btn:active {
+#reg-btn:active {
     transform: translateY(-1px);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-  }  
+} 
