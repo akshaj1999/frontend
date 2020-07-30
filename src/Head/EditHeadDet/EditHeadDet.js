@@ -1,21 +1,21 @@
 import React from "react"
+import "./edit_head_det.css"
 
 const EditHeadDet = ({details, handleChange, handleSubmit}) => {
     const {name, email} = details;
     return (
-        <div className="details-container">
+        <div className="details-container" id="edit-details-container">
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
-                    <label for="edit-details" 
+                    <label for="edit-details-name" 
                     className="lead"
-                    id="input-label"
                     >
                         Name:
                     </label>
                     <input 
                     type="text" 
                     className="form-control" 
-                    id="edit-details" 
+                    id="edit-details-name" 
                     autoFocus
                     placeholder="Enter name" 
                     required
@@ -24,16 +24,15 @@ const EditHeadDet = ({details, handleChange, handleSubmit}) => {
                     />
                 </div>
                 <div className="form-group">
-                    <label for="edit-details" 
+                    <label for="edit-details-email" 
                     className="lead"
-                    id="input-label"
                     >
                         Email:
                     </label>
                     <input 
                     type="email" 
                     className="form-control" 
-                    id="edit-details" 
+                    id="edit-details-email" 
                     autoFocus
                     placeholder="Enter email" 
                     required

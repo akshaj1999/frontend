@@ -9,7 +9,6 @@ import {
 import {Navbar,Nav,NavDropdown,Form,FormControl,Button} from 'react-bootstrap';
 import Logo from "../Baselayout/logo.svg";
 
-import Dashboard from "../Dashboard/Dashboard"
 import ViewHeadDetails from '../ViewHeadDetails/ViewHeadDetails';
 import EditHeadDetails from '../EditHeadDet/EditHeadDet';
 import ResetPass from '../ResetPass/ResetPass';
@@ -27,7 +26,7 @@ function Home ({ match }) {
         name:"Dummy Admin", 
         email:"dummyadmin@nic.in",
         password: "dumdum",
-        admin_id: "",
+        admin_id: "007",
         isAuth: ""
     });
 
