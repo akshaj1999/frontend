@@ -6,7 +6,7 @@ const resetPass = ({handleChange, handleSubmit}) => {
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label for="reset-pass" className="lead" id = "input-label">
-                        Email:
+                        Old Password
                     </label>
                     <input 
                     type="email" 

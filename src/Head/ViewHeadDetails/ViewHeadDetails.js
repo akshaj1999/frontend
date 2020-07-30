@@ -1,4 +1,5 @@
 import React from "react";
+import Home from '../Home/home'
 
 const ViewHeadDetails = (details) => {
     // Get Details from DB after auth

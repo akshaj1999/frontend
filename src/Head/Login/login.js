@@ -71,11 +71,6 @@ const LoginPage = () => {
                             Sign In
                         </button>
 
-                        <Link className="btn btn-primary" id="register-link"
-                        exact to='/user/register'
-                        >
-                            Register Here
-                        </Link>
                     </form>
                 </div>
             </div>

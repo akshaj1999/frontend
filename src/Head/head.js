@@ -9,10 +9,10 @@ import {Navbar,Nav,NavDropdown,Form,FormControl,Button} from 'react-bootstrap';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Baselayout from './Baselayout/baselayout';
 import Home from './Home/home';
-import ViewHeadDetails from './ViewHeadDetails';
-import EditHeadDetails from './EditHeadDet';
-import ResetPass from './ResetPass';
-import AddCategory from './AddCategory'
+import ViewHeadDetails from './ViewHeadDetails/ViewHeadDetails';
+import EditHeadDetails from './EditHeadDet/EditHeadDet';
+import ResetPass from './ResetPass/ResetPass';
+import AddCategory from './AddCategory/AddCategory'
 
 const Head = ({match}) => {
     const [details, setDetails] = useState(
@@ -41,38 +41,14 @@ const Head = ({match}) => {
 
     return (
       <div>
-        <Baselayout match={match}/>
+        
         <Link to={`${match.path}`}></Link>
-        <Link to={`${match.path}/login`}></Link>
+        <Link to={`${match.path}/home`}></Link>
         
-        
-        <Route exact path={`${match.path}`} component={Home} />
-        <Route path={`${match.path}/login`} component={Login} />
-        <Route 
-        path={`${match.path}/view-details`} 
-        render={() => <ViewHeadDetails 
-            {...details}
-            />} 
-        />
-        <Route 
-        path={`${match.path}/edit-details`} 
-        render={() => < EditHeadDetails 
-            details={details}
-            handleChange={handleChange}
-            handleSubmit={handleSubmit}
-            />} 
-        />
-        <Route 
-        path={`${match.path}/reset-password`} 
-        render={() => < ResetPass
-            handleChange={handleChange} 
-            handleSubmit={handleSubmit}
-            />} 
-        />
-        <Route 
-        path={`${match.path}/add-categories`} 
-        render={() => < AddCategory/>} 
-        />
+        <Route exact path={`${match.path}`} component={Login} />
+        <Route path={`${match.path}/home`} component={Home} />      
+      
+       
       </div>
     )
   }

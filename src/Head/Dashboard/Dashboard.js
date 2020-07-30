@@ -1,13 +1,14 @@
 import React, {useState} from 'react'
-import {NavLink} from 'react-router-dom';
-import ViewHeadDetails from './ViewHeadDetails';
-import EditHeadDet from './EditHeadDet';
-import ResetPass from './ResetPass'
-import AddCategory from './AddCategory'
-import "./dashboard.css"
+import {
+    BrowserRouter as Router,
+    Route, // for later
+    Link
+  } from 'react-router-dom';
+import "./dashboard.css";
 
 
-export default function Dashboard() {
+
+export default function Dashboard( {match}) {
 
     const [details, setDetails] = useState(
         {
@@ -20,7 +21,7 @@ export default function Dashboard() {
 
     const dashboardProps = {
         elements: [
-            {name: "View Details", id:"view-details"}, 
+            {name: "View Details", id:"view_details"}, 
             {name: "Edit Details", id:"edit-details"},
             {name: "Reset Password", id:"reset-password"},
             {name: "View Subordinates", id:"view-subordinates"},
@@ -48,7 +49,7 @@ export default function Dashboard() {
 
     const showElements = dashboardProps.elements.map(element => (
         <div className="dashboard-element">
-            <NavLink exact to={`/head/${element.id}`} className="nav-link" activeClassName="active" id={`v-pills-${element.id}-tab`} data-toggle="pill" role="tab" aria-controls={`v-pills-${element.id}`} aria-selected="false">{element.name}</NavLink>
+            <Link to={`/head/home/${element.id}`} className="nav-link" activeClassName="active" id={`v-pills-${element.id}-tab`} data-toggle="pill" role="tab" aria-controls={`v-pills-${element.id}`} aria-selected="false">{element.name}</Link>
             <hr className="divider"/>
         </div>
     
@@ -69,7 +70,7 @@ export default function Dashboard() {
            className="nav flex-column float-left nav-pills" 
            id="v-pills-tab" 
            role="tablist" 
-           aria-orientation="vertical">
+           aria-orientation="horizontal">
                 {showElements}
                 
             </div>
@@ -77,17 +78,7 @@ export default function Dashboard() {
                 {displayContent}
                 
             </div>
-            {/* < ViewHeadDetails  {...details} />
-            < EditHeadDet 
-            details={details}
-            handleChange={handleChange}
-            handleSubmit={handleSubmit}
-            />
-            < ResetPass
-             handleChange={handleChange} 
-             handleSubmit={handleSubmit}
-             />
-            < AddCategory /> */}
+       
         </div>
 
     );
