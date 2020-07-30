@@ -17,6 +17,7 @@ import AddCategory from '../AddCategory/AddCategory'
 import Baselayout from '../Baselayout/baselayout';
 import viewSubordinate from '../ViewSubordinate/viewsubordinate';
 import { propTypes } from 'react-bootstrap/esm/Image';
+import ViewSubordinate from '../ViewSubordinate/viewsubordinate';
 
 
 function Home ({ match }) {
@@ -57,7 +58,26 @@ const handleSubmit = e => {
             handleSubmit={handleSubmit}
             />} 
         />
-
+        <Route exact
+        path={`${match.path}/view_subordinates`} 
+        component={ViewSubordinate}
+        />
+        <Route 
+        path={`${match.path}/view_subordinates/view_sub_details`} 
+        render={()=> {
+            return(
+                <h1> hii sub details</h1>
+            )
+        }}
+        />
+        <Route 
+        path={`${match.path}/view_subordinates/edit_sub_details`} 
+        render={()=> {
+            return(
+                <h1>Edit details</h1>
+            )
+        }}
+        />
         <Route 
         path={`${match.path}/add_categories`} 
         render={() => < AddCategory/>} 
