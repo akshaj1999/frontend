@@ -7,12 +7,9 @@ import {
 import Login from './Login/login'
 import {Navbar,Nav,NavDropdown,Form,FormControl,Button} from 'react-bootstrap';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import Baselayout from './Baselayout/baselayout';
+
 import Home from './Home/home';
-import ViewHeadDetails from './ViewHeadDetails/ViewHeadDetails';
-import EditHeadDetails from './EditHeadDet/EditHeadDet';
-import ResetPass from './ResetPass/ResetPass';
-import AddCategory from './AddCategory/AddCategory'
+
 
 const Head = ({match}) => {
     const [details, setDetails] = useState(

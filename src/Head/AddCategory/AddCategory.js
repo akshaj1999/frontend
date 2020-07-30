@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import "./addCategory.css"
+import "./add_category.css"
 
 const AddCategory = () => {
     const [category, setCategory] = useState(
@@ -19,26 +19,31 @@ const AddCategory = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <div className="form-group">
-                <label for="add-category" 
-                className="lead"
-                id="input-label"
-                >
-                    Category Name
-                </label>
-                <input 
-                type="text" 
-                className="form-control" 
-                id="category-name" 
-                autoFocus
-                placeholder="For ex. Earthenware / Jute Handicraft" 
-                required
-                onChange={handleChange(name)}
-                />
-            </div>
-            <button type="submit" class="btn btn-primary">Add Category</button>
-        </form>
+        <div 
+        className="add-category-container" 
+        id="add-category"
+        >
+            <form onSubmit={handleSubmit}>
+                <div className="form-group">
+                    <label htmlFor="category-name" 
+                    className="lead"
+                    id="input-label"
+                    >
+                        Category Name
+                    </label>
+                    <input 
+                    type="text" 
+                    className="form-control" 
+                    id="category-name" 
+                    autoFocus
+                    placeholder="For ex. Earthenware / Jute Handicraft" 
+                    required
+                    onChange={handleChange(name)}
+                    />
+                </div>
+                <button type="submit" class="btn btn-primary">Add Category</button>
+            </form>
+        </div>
     )
 }
 

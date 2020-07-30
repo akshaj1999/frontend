@@ -1,5 +1,5 @@
 import React from "react";
-import Home from '../Home/home'
+import "./view_head_details.css"
 
 const ViewHeadDetails = (details) => {
     // Get Details from DB after auth
@@ -7,7 +7,8 @@ const ViewHeadDetails = (details) => {
     console.log(details,"asjdsa")
     return (
         <div 
-        className="details-container"
+        className="head-details-container"
+        id="head-details-container"
         >
             <h4 
             className="display-4"
@@ -20,6 +21,12 @@ const ViewHeadDetails = (details) => {
             id="view-head-email"
             >
                 Email: {details.email}
+            </h4>
+            <h4 
+            className="head-id lead" 
+            id="view-head-id"
+            >
+                Admin ID: {details.admin_id}
             </h4>
         </div>
     );

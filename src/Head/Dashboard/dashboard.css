@@ -1,4 +1,4 @@
-div.dashboard-container {
+/* div.dashboard-container {
     font-size: large;
     text-align: left;
     min-width: 400px;
@@ -20,8 +20,8 @@ div.dashboard-container {
     margin-left: auto;
     margin-right: auto;
 }
-
-/* .dashboard-container  .nav {
+ 
+.dashboard-container  .nav {
     font-size: large;
     text-align: left;
     min-width: 200px;
