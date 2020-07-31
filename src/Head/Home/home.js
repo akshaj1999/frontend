@@ -17,9 +17,10 @@ import Baselayout from '../Baselayout/baselayout';
 import viewSubordinate from '../ViewSubordinate/viewsubordinate';
 import { propTypes } from 'react-bootstrap/esm/Image';
 import ViewSubordinate from '../ViewSubordinate/viewsubordinate';
-import AddSubordinate from '../AddSubordinate/AddSubordinate';
+import AddSubordinate from '../AddSubordinate/addsubordinate';
 import ForgotPassword from '../ForgotPassword/ForgotPassword';
-
+import EditCategory from '../EditCategory/editcategory';
+import ViewCategory from '../ViewCategory/viewcategory';
 
 function Home ({ match }) {
 
@@ -52,14 +53,7 @@ const handleSubmit = e => {
            <ViewHeadDetails  {...details} /> 
         } 
         />
-          {/* <Route 
-        path={`${match.path}/reset_password`} 
-        render={() => < ResetPass
-            details={details}
-            handleChange={handleChange} 
-            handleSubmit={handleSubmit}
-            />} 
-        /> */}
+
         <Route exact
         path={`${match.path}/view_subordinates`} 
         component={ViewSubordinate}
@@ -89,11 +83,15 @@ const handleSubmit = e => {
             />
           } 
         />
-        {/* <Route 
-        path={`${match.path}/forgot-password`} 
-        render={() => < ForgotPassword/> }  
-        />     */}
-
+         <Route 
+        path={`${match.path}/edit_categories`} 
+        render={() => < EditCategory/>} 
+        />
+         <Route 
+        path={`${match.path}/view_categories`} 
+        render={() => < ViewCategory/>} 
+        />
+       
       </div> 
     )
   }
