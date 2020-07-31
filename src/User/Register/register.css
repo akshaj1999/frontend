@@ -26,12 +26,11 @@
 }
 
 
-form.register-form {
+.register-wrapper form.register-form {
     padding: 1rem;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    transform: translateY(-80px);
 }
 
 .form-control {

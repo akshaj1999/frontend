@@ -1,16 +1,16 @@
 #edit-details-container {
     margin: 4rem 6rem; 
     max-width: 600px;
-    font-family: 'Lato', 'sans-serif';
     letter-spacing: 1px;
 }
 
-#edit-details-container form {
+#edit-details-container form#edit-head-detail-form {
+    font-family: 'Lato', 'sans-serif';
+    font-weight: 400;
     width: 40vw;
     max-width: 500px;  
 }
 
-#edit-details-container form div.form-group{
+#edit-details-container form#edit-head-detail-form div.form-group{
     margin-bottom: 2rem;
 }
-

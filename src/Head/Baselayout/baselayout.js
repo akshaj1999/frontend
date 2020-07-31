@@ -15,7 +15,7 @@ const Baselayout = ({match}) => {
                   <Nav className="mr-auto">
                 <Nav.Link as={Link} to={`${match.path}`}>Home</Nav.Link>
                 <Nav.Link as={Link} to={`${match.path}/view_subordinates`}>View Subordinate</Nav.Link>
-                <Nav.Link as={Link} to={`${match.path}/add_subordinates`}>Add Subordinate</Nav.Link>
+                <Nav.Link as={Link} to={`${match.path}/add_subordinate`}>Add Subordinate</Nav.Link>
 
                 <NavDropdown title="Categories" id="basic-nav-dropdown">
                 <Nav.Link as={Link} to={`${match.path}/add_categories`}>Add Categories</Nav.Link>
@@ -25,7 +25,7 @@ const Baselayout = ({match}) => {
                 
                 <NavDropdown title="Account" id="basic-nav-dropdown">
                   <NavDropdown.Item as={Link} to={`${match.path}/edit_details`}>Edit Details</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to={`${match.path}/reset_password`}>Reset Password</NavDropdown.Item>
+                  {/* <NavDropdown.Item as={Link} to={`${match.path}/reset_password`}>Reset Password</NavDropdown.Item> */}
                   <NavDropdown.Item as={Link} to={`${match.path}/sign_out`}>Sign Out</NavDropdown.Item>
                 </NavDropdown>
               </Nav>

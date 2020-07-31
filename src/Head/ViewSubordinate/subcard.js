@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 
 
 function Subcard({data}) {
+  
    return(
     <Card>
     <Card.Body>

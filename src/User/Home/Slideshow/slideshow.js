@@ -47,6 +47,20 @@ function Slideshow({match}) {
           </p>
         </Carousel.Caption>
       </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="item img"
+          src={require('./images/slideshow2.jpg')}
+          alt="Third slide"
+        />
+
+        <Carousel.Caption>
+          <h3>Product 4</h3>
+          <p>
+            
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
     </Carousel>
   );
 }

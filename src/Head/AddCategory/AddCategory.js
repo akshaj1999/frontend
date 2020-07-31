@@ -27,7 +27,6 @@ const AddCategory = () => {
                 <div className="form-group">
                     <label htmlFor="category-name" 
                     className="lead"
-                    id="input-label"
                     >
                         Category Name
                     </label>
