@@ -1,0 +1,17 @@
+#product-card {
+    margin: 1.5rem;
+    /* width: 20vw; */
+    min-width: 400px;
+    min-height: 450px;
+    box-shadow: 0px 5px 5px 4px rgba(119, 119, 119, 0.3);
+}
+
+#product-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, .2);
+}
+  
+#product-card:active {
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+} 

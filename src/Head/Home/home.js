@@ -17,6 +17,8 @@ import Baselayout from '../Baselayout/baselayout';
 import viewSubordinate from '../ViewSubordinate/viewsubordinate';
 import { propTypes } from 'react-bootstrap/esm/Image';
 import ViewSubordinate from '../ViewSubordinate/viewsubordinate';
+import AddSubordinate from '../AddSubordinate/AddSubordinate';
+import ForgotPassword from '../ForgotPassword/ForgotPassword';
 
 
 function Home ({ match }) {
@@ -25,7 +27,7 @@ function Home ({ match }) {
     {
         name:"Dummy Admin", 
         email:"dummyadmin@nic.in",
-        password: "dumdum",
+        password: "",
         admin_id: "007",
         isAuth: ""
     });
@@ -40,7 +42,7 @@ const handleSubmit = e => {
     // if isAuth
     // POST the changes to the DB
 }   
- console.log(match.path)
+//  console.log(match.path)
     return (
       <div>
         <Baselayout match={match}/>
@@ -50,32 +52,29 @@ const handleSubmit = e => {
            <ViewHeadDetails  {...details} /> 
         } 
         />
-          <Route 
+          {/* <Route 
         path={`${match.path}/reset_password`} 
         render={() => < ResetPass
+            details={details}
             handleChange={handleChange} 
             handleSubmit={handleSubmit}
             />} 
-        />
+        /> */}
         <Route exact
         path={`${match.path}/view_subordinates`} 
         component={ViewSubordinate}
         />
         <Route 
         path={`${match.path}/view_subordinates/view_sub_details`} 
-        render={()=> {
-            return(
-                <h1> hii sub details</h1>
-            )
-        }}
+        render={()=> <h1> hii sub details</h1>}
         />
         <Route 
         path={`${match.path}/view_subordinates/edit_sub_details`} 
-        render={()=> {
-            return(
-                <h1>Edit details</h1>
-            )
-        }}
+        render={()=> <h1>Edit details</h1>}
+        />
+        <Route 
+        path={`${match.path}/add_subordinate`} 
+        render={()=> <AddSubordinate/>}
         />
         <Route 
         path={`${match.path}/add_categories`} 
@@ -87,8 +86,13 @@ const handleSubmit = e => {
             details={details}
             handleChange={handleChange}
             handleSubmit={handleSubmit}
-            />} 
-          />
+            />
+          } 
+        />
+        {/* <Route 
+        path={`${match.path}/forgot-password`} 
+        render={() => < ForgotPassword/> }  
+        />     */}
 
       </div> 
     )

@@ -70,8 +70,9 @@ const LoginPage = () => {
                         >
                             Sign In
                         </button>
-
+                        <Link exact to="/forgot-password" >Forgot Password</Link>
                     </form>
+                   
                 </div>
             </div>
         </div>

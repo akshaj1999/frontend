@@ -74,13 +74,12 @@ div.login-container {
   }
 }
 
-form.login-form {
-  margin-left: auto;
-  margin-right: auto;
+.login-container form.login-form {
+  margin: 5rem auto;
   width: 90%;
+  min-width: 200px;
   max-width: 400px;
   animation-name: moveInText;
-  transform: translateY(-25%);
   animation-duration: 2.1s;
   animation-timing-function: ease-out;
 }
@@ -97,7 +96,7 @@ form.login-form {
 
   100% {
     opacity: 1;
-    transform: translate(0%, -25%);
+    transform: translate(0%, 0%);
   }
 }
 
@@ -121,6 +120,7 @@ form.login-form {
 #register-link {
   margin-left: auto;
   margin-right: auto;
+  color: white;
   display: block;
   width: 100%;
   font-family: "Lato", sans-serif;
@@ -148,12 +148,18 @@ form.login-form {
 }
 }
 
-#register-link:hover, #signin-btn:hover {
-transform: translateY(-3px);
-box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, .2);
-}
-
-#register-link:active, #signin-btn:active {
-transform: translateY(-1px);
-box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+#register-link:hover, #signin-btn:hover, form.login-form a.forgot-password:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, .2);
+  }
+  
+#register-link:active, #signin-btn:active, form.login-form a.forgot-password:active {
+  transform: translateY(-1px);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
 } 
+  
+  
+form.login-form a.forgot-password {
+  color: black;
+  letter-spacing: 1px;
+}
