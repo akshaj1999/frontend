@@ -9,7 +9,10 @@ function Subcard({data}) {
     <Card.Body>
    <Card.Title>{data.name}</Card.Title>
       <Card.Text>
-       
+       Email : {data.email}<br/>
+       Region: {data.region}<br/>
+       Address : {data.address}<br/>
+       Phone: {data.phone}
       </Card.Text>
     </Card.Body>
     <Card.Footer>

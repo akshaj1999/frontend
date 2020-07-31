@@ -13,7 +13,11 @@ function ViewSubordinate({match}) {
 
     const [data, setData] = React.useState({
         match: match,
-        name: "Subordinate 1"
+        name: "Subordinate 1",
+        email: "temp@gmail.com",
+        region: "Delhi NCR",
+        address: "Uttam vihar Delhi 110001",
+        phone: "1234567890"
     }) ;
   
     return (
