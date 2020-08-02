@@ -88,7 +88,6 @@ const Products = () => {
         className="products-list-container"
         id="products-list"
         >
-            <hr />
             {getProducts}
         </div>
     );

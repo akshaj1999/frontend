@@ -1,5 +1,6 @@
 #products-list {
-    margin: 2rem;
+    margin: 2.5rem;
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }

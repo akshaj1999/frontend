@@ -5,8 +5,9 @@ import "./product_card.css"
 
 const product_card = ({name, img, mrp, selling_price}) => {
 
-    const handleAddProduct = () => {
+    const handleAddProduct = e => {
         alert("Product Added to cart");
+        e.stopPropagation()
     };
     return (
         <div class="card" id="product-card">

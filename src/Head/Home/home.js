@@ -17,7 +17,7 @@ import Baselayout from '../Baselayout/baselayout';
 import viewSubordinate from '../ViewSubordinate/viewsubordinate';
 import { propTypes } from 'react-bootstrap/esm/Image';
 import ViewSubordinate from '../ViewSubordinate/viewsubordinate';
-import AddSubordinate from '../AddSubordinate/addsubordinate';
+import AddSubordinate from '../AddSubordinate/AddSubordinate';
 import ForgotPassword from '../ForgotPassword/ForgotPassword';
 import EditCategory from '../EditCategory/editcategory';
 import ViewCategory from '../ViewCategory/viewcategory';
