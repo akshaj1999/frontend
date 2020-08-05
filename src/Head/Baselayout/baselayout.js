@@ -16,11 +16,11 @@ const Baselayout = ({match}) => {
                 <Nav.Link as={Link} to={`${match.path}`}>Home</Nav.Link>
                 <Nav.Link as={Link} to={`${match.path}/view_subordinates`}>View Subordinate</Nav.Link>
                 <Nav.Link as={Link} to={`${match.path}/add_subordinate`}>Add Subordinate</Nav.Link>
-
+ 
                 <NavDropdown title="Categories" id="basic-nav-dropdown">
                 <Nav.Link as={Link} to={`${match.path}/add_categories`}>Add Categories</Nav.Link>
                 <Nav.Link as={Link} to={`${match.path}/edit_categories`}>Edit Categories</Nav.Link>
-                <Nav.Link as={Link} to={`${match.path}/view_categories`}>View Categories</Nav.Link>
+                <Nav.Link as={Link} to={`${match.path}/add_subordinate`}>Add Subordinate</Nav.Link>
                 </NavDropdown>
                 
                 <NavDropdown title="Account" id="basic-nav-dropdown">

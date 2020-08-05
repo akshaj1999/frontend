@@ -1,0 +1,9 @@
+#product-page-container {
+    font-size: large;
+    
+}
+#product-page-container img {
+    padding: 10rem;
+    width: fit-content;
+}
+

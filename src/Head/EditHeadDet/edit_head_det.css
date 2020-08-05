@@ -1,5 +1,5 @@
 #edit-details-container {
-    margin: 4rem 6rem; 
+    margin: 5% 10%;
     max-width: 600px;
     letter-spacing: 1px;
 }
@@ -7,8 +7,8 @@
 #edit-details-container form#edit-head-detail-form {
     font-family: 'Lato', 'sans-serif';
     font-weight: 400;
-    width: 40vw;
-    max-width: 500px;  
+    max-width: 500px;
+    width: 70vw;
 }
 
 #edit-details-container form#edit-head-detail-form div.form-group{

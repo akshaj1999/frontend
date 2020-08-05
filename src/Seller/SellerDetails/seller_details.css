@@ -1,4 +1,4 @@
-#head-details-container {
+#seller-details-container {
     text-align: start;
     max-width: fit-content;
     margin: 5% 10%;
@@ -6,12 +6,12 @@
     letter-spacing: 2px;
 }
 
-#view-head-name, #view-head-email {
+#seller-details-container .seller-name, #seller-details-container .seller-email {
     margin-bottom: 1rem;
     font-weight: 300;
 }
 
-#view-head-id {
+#seller-details-container .seller-id {
     margin-bottom: 1rem;
     font-weight: 400;
 }

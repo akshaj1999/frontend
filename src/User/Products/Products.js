@@ -1,8 +1,10 @@
 import React from 'react';
+import {Link, Route} from 'react-router-dom'
 import ProductCard from './ProductCard';
+import Product from "../Products/Product"
 import "./products.css"
 
-const Products = () => {
+const Products = ({match}) => {
     const products_list = {
         products: [
         {
@@ -80,7 +82,9 @@ const Products = () => {
     ]}
 
     const getProducts = products_list.products.map (product => (
-        <ProductCard name={product.name} img={product.img} mrp={product.mrp} selling_price={product.selling_price} />
+        <Link to={`${match.path}/product`} id="product-link">
+            <ProductCard name={product.name} img={product.img} mrp={product.mrp} selling_price={product.selling_price} />
+        </Link>
     ));
 
     return (
@@ -88,8 +92,15 @@ const Products = () => {
         className="products-list-container"
         id="products-list"
         >
+            {console.log(products_list.products[0])}
             {getProducts}
+            <Route 
+                path={`${match.path}/product`} 
+                render={() =><Product product = {products_list.products[0]}/>}
+            />
+
         </div>
+
     );
 
 }

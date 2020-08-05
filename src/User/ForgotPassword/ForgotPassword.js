@@ -1,4 +1,5 @@
 import React from 'react';
+import "./forgot_password.css"
 
 const ForgotPassword = () => {
 
@@ -29,7 +30,7 @@ const ForgotPassword = () => {
                     // onChange={handleChange(name)}
                     />
                 </div>
-                <button type="submit" class="btn btn-primary">Add Category</button>
+                <button type="submit" class="btn btn-primary">Send Confirmation Email</button>
             </form>
         </div>
     );

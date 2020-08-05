@@ -76,7 +76,7 @@ const LoginPage = () => {
                         >
                             Register Here
                         </Link>
-                        <Link exact to="/forgot-password" className="forgot-password">Forgot Password</Link>
+                        <Link exact to="/user/forgot-password" className="forgot-password">Forgot Password</Link>
                     </form>
                 </div>
             </div>
