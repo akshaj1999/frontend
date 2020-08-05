@@ -1,0 +1,17 @@
+#subord-details-container {
+    text-align: start;
+    max-width: fit-content;
+    margin: 5% 10%;
+    font-family: 'Lato', 'sans-serif';
+    letter-spacing: 2px;
+}
+
+#subord-details-container .subord-name, #subord-details-container .subord-email {
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+#subord-details-container .subord-id {
+    margin-bottom: 1rem;
+    font-weight: 400;
+}

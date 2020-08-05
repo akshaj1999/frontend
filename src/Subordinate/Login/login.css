@@ -1,0 +1,165 @@
+div.loginpage-container {
+  padding: 1.5rem;   
+}
+
+div.login-bg-img-container {
+  background-image: linear-gradient(to top left,rgba(3, 245, 164, 0.7), rgba(22, 180, 207, 0.7)), url(bg_login.jpg);
+  background-size: cover;
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  min-height: 700px !important;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 72% );
+  animation-name: moveInLogin;
+  animation-duration: 1s;
+}
+
+@keyframes moveInLogin {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+div.login-container {
+  width: 40vw;
+  max-width: 400px; 
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 600px;
+}
+
+#login-heading {
+  animation-name: moveInHeader;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInHeader {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+  }  
+}
+
+#login-heading hr {
+  animation-name: moveInLine;
+  animation-duration: 1.6s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes moveInLine {
+  0% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.login-container form.login-form {
+  margin: 5rem auto;
+  width: 90%;
+  min-width: 200px;
+  max-width: 400px;
+  animation-name: moveInText;
+  animation-duration: 2.1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes moveInText {
+  0% {
+    opacity: 0;
+  }
+
+  55% {
+    opacity: 0;
+    transform: translate(0, 50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+}
+
+#signin-btn {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 2px;
+  height: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  animation-name: moveInBtn;
+  animation-duration: 2.5s;
+}
+
+#register-link {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  height: 35px;
+  padding: 3px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  animation-name: moveInBtn;
+  animation-duration: 2.5s;
+}
+
+@keyframes moveInBtn {
+0% {
+  opacity: 0;
+}
+
+75% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+
+#register-link:hover, #signin-btn:hover, form.login-form a:hover {
+transform: translateY(-3px);
+box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, .2);
+}
+
+#register-link:active, #signin-btn:active, form.login-form a:active {
+transform: translateY(-1px);
+box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+} 
+
+
+form.login-form a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 1px;
+}
