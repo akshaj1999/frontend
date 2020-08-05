@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import {Link} from "react-router-dom";
 import "./login.css"
 
-const LoginPage = () => {
+const LoginPage = ({match}) => {
     const[details, setDetails] = useState({
         email: "", 
         password: "", 
@@ -70,7 +70,7 @@ const LoginPage = () => {
                         >
                             Sign In
                         </button>
-                        <Link exact to="user/forgot-password" >Forgot Password</Link>
+                        <Link exact to={`${match.path}/forgot-password`} >Forgot Password</Link>
                     </form>
                    
                 </div>

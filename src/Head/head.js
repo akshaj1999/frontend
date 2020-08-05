@@ -7,7 +7,7 @@ import {
 import Login from './Login/login'
 import {Navbar,Nav,NavDropdown,Form,FormControl,Button} from 'react-bootstrap';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-
+import ForgotPassword from './ForgotPassword/ForgotPassword'
 import Home from './Home/home';
 
 
@@ -43,8 +43,9 @@ const Head = ({match}) => {
         <Link to={`${match.path}/home`}></Link>
         
         <Route exact path={`${match.path}`} component={Login} />
-        <Route path={`${match.path}/home`} component={Home} />      
-      
+        <Route path={`${match.path}/home`} component={Home} />
+        <Route path={`${match.path}/forgot-password`} component={ForgotPassword} />      
+        
        
       </div>
     )

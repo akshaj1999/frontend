@@ -9,8 +9,10 @@ import {
 import SubordinateDetails from '../SubordinateDetails/SubordinateDetails';
 import Baselayout from '../Baselayout/baselayout';
 import AddSeller from '../AddSeller/AddSeller'
-
-
+import ViewSeller from '../ViewSeller/ViewSeller'
+import EditSeller from '../EditSeller/EditSeller'
+import ViewSellerDetails from '../ViewSellerDetails/ViewSellerDetails'
+import EditSellerDetails from '../EditSellerDetails/EditSellerDetails'
 function Home ({ match }) {
 
   const [details, setDetails] = useState(
@@ -46,6 +48,24 @@ const handleSubmit = e => {
         path={`${match.path}/add_seller`} 
         render={() => <AddSeller/>} 
         />
+         <Route 
+         exact
+        path={`${match.path}/view_seller`}
+        component={ViewSeller} 
+        />
+          <Route 
+        path={`${match.path}/edit_seller`}
+        component={EditSeller} 
+        />
+         <Route 
+        path={`${match.path}/view_seller/view_sel_details`}
+        component={ViewSellerDetails} 
+        />
+         <Route 
+        path={`${match.path}/view_seller/edit_sel_details`}
+        component={EditSellerDetails} 
+        />
+        
        
       </div> 
     )

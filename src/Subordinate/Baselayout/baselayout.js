@@ -19,7 +19,12 @@ const Baselayout = ({match}) => {
         <Navbar.Collapse id="basic-navbar-nav">
          <Nav className="mr-auto">
       <Nav.Link as={Link} to={`${match.path}`}>Home</Nav.Link>
-      <Nav.Link as={Link} to={`${match.path}/add_seller`}>Add Seller</Nav.Link>
+     
+      <NavDropdown title="Seller" id="basic-nav-dropdown">
+                <Nav.Link as={Link} to={`${match.path}/add_seller`}>Add Seller</Nav.Link>
+                <Nav.Link as={Link} to={`${match.path}/edit_seller`}>Edit Seller</Nav.Link>
+                <Nav.Link as={Link} to={`${match.path}/view_seller`}>View Seller</Nav.Link>
+      </NavDropdown>
       <Nav.Link as={Link} to={`${match.path}/sign_out`}>Sign Out</Nav.Link>
     </Nav>
   </Navbar.Collapse>
